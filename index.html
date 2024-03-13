@@ -372,7 +372,7 @@
                 </ul>
               </div>
               <div class="ud-pricing-footer">
-                <a href="#" class="ud-main-btn ud-border-btn">
+                <a href="#" class="ud-main-btn ud-border-btn order">
                   Pesan Sekarang
                 </a>
               </div>
@@ -395,7 +395,7 @@
                 </ul>
               </div>
               <div class="ud-pricing-footer">
-                <a href="#" class="ud-main-btn ud-white-btn">
+                <a href="#" class="ud-main-btn ud-white-btn order">
                   Pesan Sekarang
                 </a>
               </div>
@@ -419,7 +419,7 @@
                 </ul>
               </div>
               <div class="ud-pricing-footer">
-                <a href="#" class="ud-main-btn ud-border-btn">
+                <a href="#" class="ud-main-btn ud-border-btn order">
                   Pesan Sekarang
                 </a>
               </div>
@@ -545,7 +545,7 @@
     </script>
     <script>
       $(document).ready(function() {
-        $(".ud-main-btn").on("click", function(e) {
+        $(".order").on("click", function(e) {
           e.preventDefault();
           
           var paketNama = $(this).closest(".ud-single-pricing").find(".ud-pricing-header h3").text();
