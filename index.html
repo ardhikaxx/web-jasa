@@ -592,15 +592,12 @@
     </script>
     <script>
       $(document).ready(function() {
-        // Fungsi untuk menangani klik pada tombol "Pesan Sekarang"
         $(".ud-main-btn").on("click", function(e) {
           e.preventDefault();
           
-          // Ambil informasi paket dari elemen yang diklik
           var paketNama = $(this).closest(".ud-single-pricing").find(".ud-pricing-header h3").text();
           var paketHarga = $(this).closest(".ud-single-pricing").find(".ud-pricing-header h4.price").text();
-      
-          // Tampilkan Sweet Alert dengan informasi paket
+
           Swal.fire({
             title: 'Pilih Paket',
             html: 'Anda memilih paket: <strong>' + paketNama + '</strong><br>Harga: <strong>' + paketHarga + '</strong>',
@@ -609,7 +606,6 @@
             confirmButtonText: 'Pesan',
             cancelButtonText: 'Batal'
           }).then((result) => {
-            // Jika pengguna menekan tombol "Pesan", arahkan ke WhatsApp
             if (result.isConfirmed) {
               var pesanTemplate = encodeURIComponent('Halo, saya tertarik dengan paket ' + paketNama + ' seharga ' + paketHarga + '. Mohon informasi lebih lanjut.');
               window.location.href = 'https://wa.me/6285933648537?text=' + pesanTemplate;
