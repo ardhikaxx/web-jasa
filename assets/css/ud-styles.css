@@ -947,25 +947,23 @@ p {
 }
 
 .ud-single-pricing.last-item::after {
-  background: #13c296;
+  background: #3056d3;
   top: -2px;
   right: -2px;
   border-radius: 0px 8px 0px 55px;
 }
 
-.ud-single-pricing .ud-popular-tag {
-  display: inline-block;
+.ud-popular-tag {
   padding: 10px 25px;
-  background: var(--white);
+  background: #fff;
   border-radius: 30px;
-  color: var(--primary-color);
   margin-bottom: 20px;
   font-weight: 600;
 }
 
 .ud-single-pricing .ud-pricing-header h3 {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 26px;
   margin-bottom: 8px;
 }
 
