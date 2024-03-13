@@ -611,7 +611,7 @@
           }).then((result) => {
             // Jika pengguna menekan tombol "Pesan", arahkan ke WhatsApp
             if (result.isConfirmed) {
-              var pesanTemplate = encodeURIComponent('Halo, saya tertarik dengan paket ' + paketNama + '. Mohon informasi lebih lanjut.');
+              var pesanTemplate = encodeURIComponent('Halo, saya tertarik dengan paket ' + paketNama + ' seharga ' + paketHarga + '. Mohon informasi lebih lanjut.');
               window.location.href = 'https://wa.me/6285933648537?text=' + pesanTemplate;
             }
           });
