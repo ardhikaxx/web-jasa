@@ -553,12 +553,11 @@
             title: 'Pilih Paket',
             html: 'Anda memilih paket: <strong>' + paketNama + '</strong><br>Harga: <strong>' + paketHarga + '</strong>',
             icon: 'info',
-            iconColor: '#202124',
+            iconColor: '#2AA5FF',
             showCancelButton: true,
             confirmButtonText: 'Pesan',
-            confirmButtonColor: '#202124',
+            confirmButtonColor: '#2AA5FF',
             cancelButtonText: 'Batal',
-            cancelButtonColor: '#EA1500',
           }).then((result) => {
             if (result.isConfirmed) {
               var pesanTemplate = encodeURIComponent('Halo, saya tertarik dengan paket ' + paketNama + ' seharga ' + paketHarga + '. Mohon informasi lebih lanjut.');
