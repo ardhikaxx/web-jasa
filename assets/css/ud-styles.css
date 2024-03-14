@@ -521,7 +521,7 @@ p {
 /* ===== Hero CSS ===== */
 .ud-hero {
   background: var(--primary-color);
-  padding-top: 180px;
+  padding-top: 140px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -538,7 +538,8 @@ p {
 
 .ud-hero-content {
   max-width: 780px;
-  margin: auto;
+  margin-top: -100px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
