@@ -3,8 +3,8 @@
   --font: "Inter", sans-serif;
   --body-color: #637381;
   --heading-color: #212b36;
-  --primary-color: #3056d3;
-  --white: #ffffff;
+  --primary-color: #2AA5FF;
+  --white: #EFF0F2;
 }
 
 body {
@@ -32,11 +32,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #3056d3;
+  background: var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffffff;
+  background: var(--white);
   border-radius: 30px;
 }
 
@@ -258,7 +258,8 @@ p {
 }
 
 .navbar-brand img {
-  max-width: 160px;
+  max-width: 185px;
+  margin-left: -15px;
 }
 
 .navbar-toggler {
@@ -472,7 +473,7 @@ p {
 
 .navbar-btn .ud-white-btn {
   background: rgba(255, 255, 255, 1);
-  color: #3056d3;
+  color: var(--primary-color);
   font-weight: 600;
 }
 
@@ -879,11 +880,6 @@ p {
   margin-bottom: 40px;
 }
 
-.ud-about-content .ud-main-btn:hover {
-  background: #2748b4;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .ud-about-image {
@@ -908,18 +904,20 @@ p {
 .ud-single-pricing {
   margin-bottom: 40px;
   background: var(--white);
-  border: 2px solid #d4deff;
+  border: 2px solid var(--primary-color);
   border-radius: 8px;
   text-align: center;
   padding: 45px 30px;
   position: relative;
+  height: 520px;
 }
 
 .ud-single-pricing.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3056d3), to(#179bee));
-  background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary-color)), to(#0095ff));
+  background: linear-gradient(180deg, var(--primary-color) 0%, #0095ff 100%);
   border: none;
   padding: 55px 30px;
+  height: 560px;
 }
 
 .ud-single-pricing.active .ud-pricing-header h3,
@@ -947,7 +945,7 @@ p {
 }
 
 .ud-single-pricing.last-item::after {
-  background: #3056d3;
+  background: var(--primary-color);
   top: -2px;
   right: -2px;
   border-radius: 0px 8px 0px 55px;
@@ -955,7 +953,6 @@ p {
 
 .ud-popular-tag {
   padding: 10px 25px;
-  background: #fff;
   border-radius: 30px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -1003,7 +1000,7 @@ p {
 
 .ud-single-pricing .ud-white-btn {
   background: var(--white);
-  color: var(--heading-color);
+  color: var(--primary-color);
 }
 
 .ud-single-pricing .ud-white-btn:hover {
@@ -1478,7 +1475,7 @@ p {
 
 /* ===== Footer CSS ===== */
 .ud-footer {
-  background: var(--heading-color);
+  background: #00487c;
   padding-top: 15px;
   position: relative;
   z-index: 1;
@@ -1511,7 +1508,7 @@ p {
 
 .ud-widget .ud-footer-logo {
   font-size: 35px;
-  margin-bottom: 5px;
+  margin-bottom: -5px;
   color: #fff;
 }
 
@@ -1523,8 +1520,7 @@ p {
   font-size: 15px;
   line-height: 24px;
   color: #f3f4fe;
-  margin-bottom: 10px;
-  max-width: 260px;
+  margin-bottom: 15px;
 }
 
 .ud-widget .ud-widget-socials {
@@ -2005,7 +2001,7 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 28px;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .ud-blog-overlay-content .ud-blog-author a {
@@ -2035,7 +2031,7 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 28px;
-  color: #ffffff;
+  color: var(--white);
   margin-right: 30px;
 }
 

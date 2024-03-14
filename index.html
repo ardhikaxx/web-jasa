@@ -10,7 +10,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://uideck.com/play/">
     <meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
-    <title>Jasa Web Murah | ARDHKX</title>
+    <title>WebBoxx | Jasa Web Murah</title>
 
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png"/>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
@@ -26,7 +26,7 @@
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
               <a class="navbar-brand" href="index.html">
-                <img src="./assets/images/logo/logo.svg" alt="Logo"/>
+                <img src="./assets/images/logo/logo.png" alt="Logo"/>
               </a>
               <button class="navbar-toggler">
                 <span class="toggler-icon"> </span>
@@ -71,14 +71,14 @@
           <div class="col-lg-12">
             <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
               <h1 class="ud-hero-title">
-                Cari jasa pembuatan situs web yang menarik dan mendapatkan hosting gratis? di sini saja!
+                Cari jasa pembuatan situs web menarik dengan hosting gratis? <br> Di sini aja!
               </h1>
               <p class="ud-hero-desc">
-                Nikmati layanan unggulan untuk mengembangkan website dengan tampilan profesional dan fasilitas hosting tanpa biaya.
+                Nikmati layanan unggulan untuk website dengan fasilitas hosting gratis yang memberikan kemudahan tanpa batas untuk mewujudkan visi digital Anda.
               </p>
               <ul class="ud-hero-buttons">
                 <li>
-                  <a href="https://ardhika-portofolio.vercel.app/" rel="" target="_blank" class="ud-main-btn ud-white-btn text-primary fw-bold">Portofolio <i class="fas fa-arrow-right p-1 "></i></a>
+                  <a href="https://ardhika-portofolio.vercel.app/" rel="" target="_blank" class="ud-main-btn ud-white-btn fw-bold">Portofolio <i class="fas fa-arrow-right p-1 "></i></a>
                 </li>
               </ul>
             </div>
@@ -201,17 +201,17 @@
               </div>
               <ul class="ud-team-socials">
                 <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-facebook-filled"></i>
+                  <a href="https://github.com/ardhikaxx" target="_blank">
+                    <i class="lni lni-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/MusharofChy">
-                    <i class="lni lni-twitter-filled"></i>
+                  <a href="https://wa.me/qr/54GUTJTUGKYEP1" target="_blank">
+                    <i class="lni lni-whatsapp"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/MusharofChy">
+                  <a href="https://www.instagram.com/ardxhk_/" target="_blank">
                     <i class="lni lni-instagram-filled"></i>
                   </a>
                 </li>
@@ -262,11 +262,7 @@
             </div>
             <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
               <div class="accordion">
-                <button
-                  class="ud-faq-btn collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                >
+                <button class="ud-faq-btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
                   <span class="icon flex-shrink-0">
                     <i class="lni lni-chevron-down"></i>
                   </span>
@@ -382,7 +378,7 @@
           <div class="col-lg-4 col-md-6 col-sm-10">
             <div class="ud-single-pricing active wow fadeInUp" data-wow-delay=".1s">
               <div class="ud-pricing-header">
-                <h3 class="ud-popular-tag text-primary">Paket Populer</h3>
+                <h3 class="ud-popular-tag">Paket Populer</h3>
                 <h4 class="price">Rp250.000,-</h4>
               </div>
               <div class="ud-pricing-body">
@@ -445,8 +441,9 @@
             <div class="col-xl-3 col-lg-4 col-md-12">
               <div class="ud-widget  text-center">
                 <a href="./index.html" class="ud-footer-logo fw-bold">
-                  ARDHKX
+                  <img src="./assets/images/logo/logo.png" alt="">
                 </a>
+                <p class="ud-widget-desc">Layanan Jasa Web Dengan Harga Terjangkau</p>
                 <ul class="ud-widget-socials">
                   <li>
                     <a href="https://wa.me/qr/54GUTJTUGKYEP1" target="_blank">
@@ -478,14 +475,14 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <p class="ud-footer-bottom-left">
-                Jasa webite murah
+              <p class="ud-footer-bottom-left fw-bold" style="font-style: italic;">
+                #JasaWebiteMurah
               </p>
             </div>
             <div class="col-md-6">
               <p class="ud-footer-bottom-right">
                 Designed and Developed by
-                <a href="https://ardhika-portofolio.vercel.app/" target="_blank" rel="nofollow">ARDHKX</a>
+                <a href="https://ardhika-portofolio.vercel.app/" target="_blank" rel="nofollow" style="font-style: italic;">ARDHKX</a>
               </p>
             </div>
           </div>
@@ -555,9 +552,12 @@
             title: 'Pilih Paket',
             html: 'Anda memilih paket: <strong>' + paketNama + '</strong><br>Harga: <strong>' + paketHarga + '</strong>',
             icon: 'info',
+            iconColor: '#202124',
             showCancelButton: true,
             confirmButtonText: 'Pesan',
-            cancelButtonText: 'Batal'
+            confirmButtonColor: '#202124',
+            cancelButtonText: 'Batal',
+            cancelButtonColor: '#EA1500',
           }).then((result) => {
             if (result.isConfirmed) {
               var pesanTemplate = encodeURIComponent('Halo, saya tertarik dengan paket ' + paketNama + ' seharga ' + paketHarga + '. Mohon informasi lebih lanjut.');
