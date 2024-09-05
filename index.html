@@ -484,28 +484,28 @@
     $(document).ready(function () {
       $(".order").on("click", function (e) {
         e.preventDefault();
-
+  
         var paketNama = $(this).closest(".ud-single-pricing").find(".ud-pricing-header h3").text();
         var paketHarga = $(this).closest(".ud-single-pricing").find(".ud-pricing-header h4.price").text();
-
+  
         Swal.fire({
-          title: 'Pilih Paket',
+          title: 'Konfirmasi Pesanan',
           html: 'Anda memilih paket: <strong>' + paketNama + '</strong><br>Harga: <strong>' + paketHarga + '</strong>',
           icon: 'info',
           iconColor: '#2AA5FF',
           showCancelButton: true,
-          confirmButtonText: 'Pesan',
+          confirmButtonText: 'Pesan Sekarang',
           confirmButtonColor: '#2AA5FF',
           cancelButtonText: 'Batal',
         }).then((result) => {
           if (result.isConfirmed) {
-            var pesanTemplate = encodeURIComponent('Halo, saya tertarik dengan paket ' + paketNama + ' seharga ' + paketHarga + '. Mohon informasi lebih lanjut.');
+            var pesanTemplate = encodeURIComponent('Halo, saya tertarik untuk memesan paket ' + paketNama + ' dengan harga ' + paketHarga + '. Bisakah Anda memberikan informasi lebih lanjut?');
             window.location.href = 'https://wa.me/6285933648537?text=' + pesanTemplate;
           }
         });
       });
     });
-  </script>
+  </script>  
 </body>
 
 </html>
