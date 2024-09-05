@@ -500,7 +500,7 @@
         }).then((result) => {
           if (result.isConfirmed) {
             var pesanTemplate = encodeURIComponent('Halo, saya tertarik untuk memesan paket ' + paketNama + ' dengan harga ' + paketHarga + '. Bisakah Anda memberikan informasi lebih lanjut?');
-            window.location.href = 'https://wa.me/6285933648537?text=' + pesanTemplate;
+            window.open('https://wa.me/6285933648537?text=' + pesanTemplate, '_blank');
           }
         });
       });
