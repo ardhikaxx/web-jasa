@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Hero } from '../components/Hero.jsx'
+import { Navbar } from '../components/Navbar.jsx'
+import { Pricing } from '../components/Pricing.jsx'
+import { Faq } from '../components/Faq.jsx'
+import { Optional } from '../components/Optional.jsx'
+import { Footer } from '../components/Footer.jsx'
+import { ScrollUpButton } from '../components/ScrollUpButton'
+import '../styles/Theme.css'
+import '../styles/Diagonals.css'
+---
+
+<Layout title="REXDEV">
+  <Navbar client:load />
+  <Hero client:load />
+  <Pricing client:load />
+  <Optional client:load />
+  <Faq client:load /> 
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>
