@@ -17,13 +17,19 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/Logo.png" />
-    <meta name="generator" content={Astro.generator} />
-    <meta 
-      name="description" 
-      content="Jasa pembuatan website murah dengan kualitas terbaik. Kami menawarkan website responsif dan custom sesuai kebutuhan bisnis Anda dengan harga terjangkau. Mulai proyek website Anda sekarang!" 
-    />
+    <meta name="description" content="Jasa pembuatan website murah dengan kualitas terbaik. Kami menawarkan website responsif dan custom sesuai kebutuhan bisnis Anda dengan harga terjangkau. Mulai proyek website Anda sekarang!" />
+    <meta name="author" content="RexDev" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Jasa pembuatan website murah dengan kualitas terbaik. Kami menawarkan website responsif dan custom sesuai kebutuhan bisnis Anda dengan harga terjangkau. Mulai proyek website Anda sekarang!" />
+    <meta property="og:image" content="/Logo.png" />
+    <meta property="og:url" content="https://jasa-website-murah.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="Jasa pembuatan website murah dengan kualitas terbaik. Kami menawarkan website responsif dan custom sesuai kebutuhan bisnis Anda dengan harga terjangkau. Mulai proyek website Anda sekarang!" />
+    <meta name="twitter:image" content="/Logo.png" />
     <title>{title}</title>
   </head>
   <body class="bg-gray-50">
@@ -32,10 +38,14 @@ const { title } = Astro.props;
     </main>
     <style is:global>
       html {
-        font-family: Inter;
+        font-family: Inter, sans-serif;
         background-color: #26272b;
         overflow-x: hidden;
         scroll-behavior: smooth !important;
+      }
+      body {
+        margin: 0;
+        padding: 0;
       }
     </style>
   </body>
